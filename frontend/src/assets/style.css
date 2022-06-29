@@ -133,7 +133,9 @@ ul.category li.active a:visited {
 
 @media screen and (max-width: 500px) {
   .items {
-    grid-template-columns: auto;
+    
+      grid-template-columns: repeat(1, 1fr);
+    
     grid-gap: 15px;
   }
   .items .item .info {
@@ -142,6 +144,7 @@ ul.category li.active a:visited {
   ul.items {
     padding: 5px 0px;
   }
+
 }
 
 /****************************
@@ -170,7 +173,7 @@ header img.white-border {
   left: 15%;
 }
 .text p {
-  font-size: 60px;
+  font-size: 3.5vw;
   color: #fff;
   font-weight: 600;
 }
@@ -180,7 +183,7 @@ header img.white-border {
 /****************************
 * Media Screen
 *****************************/
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .logo img {
     width: 50px;
   }
@@ -201,9 +204,10 @@ header img.white-border {
     padding: 20px 0px;
     gap: 30px;
   }
+  
 }
-@media screen and (max-width:280px) {
-   ul.category li a {
+@media screen and (max-width: 280px) {
+  ul.category li a {
     padding: 10px 25px;
   }
 }
@@ -280,7 +284,7 @@ footer button.link-button {
     font-size: 14px;
   }
 }
-@media screen and (max-width:280px) {
+@media screen and (max-width: 280px) {
   footer .subtotal {
     font-size: 15px;
   }
@@ -437,11 +441,24 @@ footer button.link-button {
   overflow-wrap: break-word;
 }
 
+
+@media screen and (max-width: 750px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 500px) {
   .popup .popup-content {
     top: 20%;
     left: 10%;
     width: 76%;
     padding: 0 4%;
+  }
+  
+}
+@media screen and (max-width: 450px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
